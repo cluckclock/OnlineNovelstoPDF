@@ -1,5 +1,7 @@
 #Ignore Script Caches
-*.[pyc]
+*.pyc
 __pycache__/
 #Ignore generated PDFs
-*.[pdf]
+*.pdf
+#Ignore auto-generated main.spec
+*.spec

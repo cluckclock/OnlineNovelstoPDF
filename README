@@ -1,0 +1,16 @@
+Webseries to PDF
+
+Use this to scrape a website of a series of indexed webpages and convert the content to a PDF.
+
+This requires: Python3, Mechanicalsoup, Pypdf
+
+
+Title of the PDF: What you want the pdf to be called. Ex.: online-novel
+
+Prefix, index, suffix: If the address of the first page is: "http://book.com/book/pg1.html", then the prefix would be, "http://book.com/book/pg" the starting index would be, "1" and the suffix would be, ".html" The app will increase the 'index' by 1 and scrape the next page.
+
+Element type: The type of element containing the text to be scraped. Ex: div
+
+Element Attributes: Element CSS selector attributes - class or id. Only tested with class. Ex.: chapter-body
+
+Keyword in Title: This will let the program know when to stop scraping. If all the pages you want to scrape have the book title in them, put that. Once the page returns with a title without this keyword, the program will know to stop. Ex: Light Fantastic
