@@ -4,9 +4,16 @@ import convert
 print("Online Novel to PDF")
 
 title = input("Title of PDF: ")
-prefix = input("Prefix of Address: ")
+#prefix = input("Prefix of Address: ")
+#index = int(input("Incrementing index: "))
+#suffix = input("Suffix (If any): ")
+address = input("Address of first page: ")
 index = int(input("Incrementing index: "))
-suffix = input("Suffix (If any): ")
+#parse Address
+parts = address.split(str(index))
+prefix = parts[0]
+suffix = parts[1]
+
 tag = input("Element type: ")
 attr = input("Element Atrributes (If any): ")
 titleKeyword = input("Keyword in Title (To make sure only scraping what is needed): ")
