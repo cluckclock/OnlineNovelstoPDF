@@ -14,4 +14,4 @@ class Converter:
         self.pdf.multi_cell(0, 5, preparedText(text))
 
     def printPDF(self, title):
-        self.pdf.output(title + '.pdf', 'F')
+        self.pdf.output("pdf/" + title + '.pdf', 'F')

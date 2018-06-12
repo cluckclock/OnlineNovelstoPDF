@@ -1,7 +1,7 @@
 import scrape
 import convert
 
-print("Webseries to PDF")
+print("Online Novel to PDF")
 
 title = input("Title of PDF: ")
 prefix = input("Prefix of Address: ")
