@@ -2,7 +2,9 @@ Webseries to PDF
 
 Use this to scrape a website of a series of indexed webpages and convert the content to a PDF.
 
-This requires: Python3, Mechanicalsoup, Pypdf
+This requires: Python 3, Mechanicalsoup, Pypdf
+
+If you are running Ubuntu run sudo ./debian-setup.sh in this directory. this will install pip and python modules. To make sure you have python3, run: python3 --version
 
 
 Title of the PDF: What you want the pdf to be called. Ex.: online-novel
