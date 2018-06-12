@@ -1,0 +1,5 @@
+#Ignore Script Caches
+*.[pyc]
+__pycache__/
+#Ignore generated PDFs
+*.[pdf]
