@@ -1,4 +1,4 @@
-Webseries to PDF
+Online Novels to PDF
 
 Use this to scrape a website of a series of indexed webpages and convert the content to a PDF.
 
@@ -6,13 +6,24 @@ This requires: Python 3, Mechanicalsoup, Pypdf
 
 If you are running Ubuntu run sudo ./debian-setup.sh in this directory. this will install pip and python modules. To make sure you have python3, run: python3 --version
 
+You will be asked information on the data you want to scrape. All you need to know is the address of the first page, what number in the address brings you to the next page, and a keyword in the page titles that is unique to only the pages you want to scrape.
 
-Title of the PDF: What you want the pdf to be called. Ex.: online-novel
+If you know the element in which the content is stored on the page, you can feed this in. The element type is the tag name: div, p, span, etc. The unique attribute name and value is not required, but it is highly recommended if the website you're scraping has many elements before the actual content. the attribute name may be an id or class, and the value could be chapter-content or text. 
 
-Prefix, index, suffix: If the address of the first page is: "http://book.com/book/pg1.html", then the prefix would be, "http://book.com/book/pg" the starting index would be, "1" and the suffix would be, ".html" The app will increase the 'index' by 1 and scrape the next page.
+Example program run:
 
-Element type: The type of element containing the text to be scraped. Ex: div
+Online Novel to PDF
+Title of PDF: my-book
+Address of first page: http://example.com/books/bestbookever/pg1736.html
+Incrementing index: 1736
+Keyword in Title (To make sure only scraping what is needed): Best Book Ever!
+Do you know which HTML container the content resides in? yes
+Element type: div
+Element Attribute Name: id
+Element Attribute Value: chapter-body
 
-Element Attributes: Element CSS selector attributes - class or id. Only tested with class. Ex.: chapter-body
+...
+Webpage content being scraped
+...
 
-Keyword in Title: This will let the program know when to stop scraping. If all the pages you want to scrape have the book title in them, put that. Once the page returns with a title without this keyword, the program will know to stop. Ex: Light Fantastic
+done!
