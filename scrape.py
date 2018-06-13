@@ -17,5 +17,9 @@ class Scraper:
         self.browser.open(address)
 
 #Get body of webpage - stuff to be scraped
-    def getText(self, elem, details = ""):
-        return self.browser.get_current_page().find(elem, details).text
+    def getText(self, elem, details = {}):
+        return self.browser.get_current_page().find(elem, attrs = details).text
+
+#Retrieve all elements
+    def getAllElements(self):
+        return self.browser.get_current_page().findAll()
